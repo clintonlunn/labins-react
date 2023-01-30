@@ -5,6 +5,22 @@
   width: 100%;
 }
 
-div.esri-ui.calcite-theme-light {
-  inset: 50px 0px 0px !important;
+.primary-color {
+  background-color: #0d3b4b;
+}
+
+.secondary-color {
+
+}
+
+.vertical-divider {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100px;
+  margin: 0 15px;
+  transform: scale(.7,.3);
+  transform-origin: left;
+  border-left: 1px solid;
+  color: #ffffff;
 }

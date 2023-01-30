@@ -7,6 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  NavbarText,
 } from "reactstrap";
 
 const NavBar: React.FC = () => {
@@ -16,10 +17,15 @@ const NavBar: React.FC = () => {
 
   return (
     <div>
-      <Navbar color="info" light fixed="top">
+      <Navbar className="primary-color" dark fixed="top">
         <div className="justify-content-start">
-          <NavbarBrand href="/">LABINS</NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} className="me-2" />
+          <NavbarBrand href="/">LABINS</NavbarBrand>
+          <span className="vertical-divider"></span>
+          <NavbarText color="light">
+            Land Boundary Information System: Online Information and Maps for
+            the State of Florida
+          </NavbarText>
           <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
               <NavItem>
